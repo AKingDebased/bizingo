@@ -1,0 +1,38 @@
+.bizingo-card{
+  width:975px;
+  margin:0 auto;
+}
+
+#bizingo-header{
+  width:955px;
+  height:80px;
+  background-color: dodgerblue;
+  margin:0 auto;
+}
+
+#bizingo-header p{
+  /*margin:5px;*/
+  color: aliceblue;
+  font-size:80px;
+  text-align: center;
+  position:relative;
+  bottom:5px;
+}
+
+.bizingo-cell{
+  float:left;
+  margin: 10px;
+  height:100px;
+  width: 175px;
+  background-color: cadetblue;
+  transition: background-color .7s;
+  transition: transform 1s;
+}
+
+.bizingo-cell:hover{
+  background-color:aquamarine;
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
