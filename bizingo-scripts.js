@@ -1,4 +1,8 @@
 $(function () {
+  function restaurantCafeServer(){
+
+  }
+  
   var winners = [
     ['a1','a2','a3','a4','a5'],
     ['b1','b2','b3','b4','b5'],
@@ -17,7 +21,9 @@ $(function () {
   var possibleWins = winners.length;
 
   $('.bizingo-cell').click(function(){
-    $(this).css("background-color","aquamarine");
+    $(this).css("background-image","url('http://www.wpclipart.com/education/gold_stars/circle_star_gold_T.png')");
+    $(this).css("background-size","45px");
+    $(this).css("background-repeat","no-repeat");
     clicked.push($(this).attr('id'));
 
     for(var i = 0; i < possibleWins; i++) {
