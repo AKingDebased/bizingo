@@ -2,7 +2,6 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 
-
 .arrows{
   clear:both;
   width:250px;
@@ -23,6 +22,7 @@ body{
 .bizingo-card{
   width:975px;
   margin:0 auto;
+  overflow: auto;
 }
 
 #bizingo-header{
