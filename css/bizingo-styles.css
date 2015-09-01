@@ -1,0 +1,94 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightskyblue;
+}
+
+.arrows{
+  clear:both;
+  width:250px;
+  margin:0 auto;
+}
+
+.arrow{
+  height:100px;
+  width:100px;
+}
+
+.arrow:active{
+  position:relative;
+  top:2px;
+  left:2px;
+}
+
+.bizingo-card{
+  width:960px;
+  margin:0 auto;
+  overflow: auto;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#bizingo-header{
+  width:960px;
+  height:100px;
+  background-color: dodgerblue;
+  border: 3px solid black;
+  margin:0 auto;
+  box-sizing: border-box;
+  float:left;
+}
+
+#bizingo-header p{
+  letter-spacing: 20px;
+  font-size:80px;
+  text-align:center;
+  color:white;
+  text-shadow: 3px 3px 0 black, -3px -3px 0 black;
+  position:relative;
+  top:-85px;
+
+}
+
+.bizingo-cell{
+  float:left;
+  background-color:white;
+  border: 3px black solid;
+  margin: 1px;
+  height:110px;
+  width: 190px;
+  transition: background-color .7s;
+  transition: transform 1s;
+  box-sizing: border-box;
+  transition: background-image .5s, background size .5s
+}
+
+.bizingo-cell p{
+  width:120px;
+  margin:0 auto;
+  text-align:center;
+  position:relative;
+  top:15px;
+}
+
+.bizingo-cell:hover{
+  background-color:aquamarine;
+}
+
+.overlay{
+  background-color:white;
+  width:863px;
+  height: 600px;
+  position: absolute;
+  left:479px;
+  bottom:59px;
+  visibility:hidden;
+  padding:50px;
+  border-radius:12px;
+}
+
+.overlay-fade{
+  visibility:visible;
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
