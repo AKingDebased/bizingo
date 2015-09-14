@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="css/bizingo-styles.css" charset="utf-8">
 </head>
 <body>
-  <div class="bizingo-card">
+
+  <div class="bizingo-card" id="card1">
     <div id="bizingo-header"><p>BIZINGO!</p></div>
     <div class="bizingo-cell" id="a1"><p>Excellent customer service<p></div>
       <div class="bizingo-cell" id="a2"><p>Selling</p></div>
@@ -41,17 +42,19 @@
             Salary.com</a></p>
 
             <button class="close-window">Close Window</button>
-      </div>
-    </div>
+          </div>
+        </div>
+        <div class="bizingo-card" id="card2" style="height:500px;width:500px;background-color:cadetblue"></div>
 
-    <!-- <div class="arrows">
-      <img class="arrow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Circle_arrow_left_font_awesome.svg/2000px-Circle_arrow_left_font_awesome.svg.png">
-      <img class="arrow" src="http://www.clipartbest.com/cliparts/4Tb/4zA/4Tb4zAaTg.png">
-    </div> -->
+        <div class="arrows">
+          <img class="arrow" id="left" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Circle_arrow_left_font_awesome.svg/2000px-Circle_arrow_left_font_awesome.svg.png">
+          <img class="arrow" id="right" src="http://www.clipartbest.com/cliparts/4Tb/4zA/4Tb4zAaTg.png">
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/bizingo-scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/bizingo-scripts.js"></script>
 
-  </script>
-</body>
-</html>
+      </script>
+    </body>
+    </html>

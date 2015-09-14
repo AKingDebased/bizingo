@@ -1,8 +1,4 @@
 $(function () {
-  function restaurantCafeServer(){
-
-  }
-
   // var winners = [
   //   ['a1','a2','a3','a4','a5'],
   //   ['b1','b2','b3','b4','b5'],
@@ -17,9 +13,13 @@ $(function () {
   //   ['a1','b2','c3','d4','e5'],
   //   ['a5','b4','c3','d2','e1']
   // ];
+
   var winners = [{name: "restaurant and cafe server", winner: ['c1','c2','c3','c4','c5']}];
   var clicked = [];
   var possibleWins = winners[0].winner.length;
+  var currentCard = 1;
+
+  $("#card" + currentCard).css("visibility","visible");
 
   $('.bizingo-cell').click(function(){
     $(this).css("background-size","45px");
@@ -57,6 +57,11 @@ $(function () {
       }).fadeTo('slow',15);
 
       $(".bizingo-cell").toggleClass("flip").css("background-image","none");
+    })
 
+    $("#right").click(function(){
+      $("#card" + currentCard).hide("slide");
+      currentCard++;
+      $("#card" + currentCard).css("visibility","visible").show("slide",{direction:"right"});
     })
   });
