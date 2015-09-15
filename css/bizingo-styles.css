@@ -62,9 +62,11 @@ body{
   margin: 1px;
   height:110px;
   width: 190px;
+  background-size: 45px;
+  background-repeat:no-repeat;
+  box-sizing: border-box;
   transition: background-color .7s;
   transition: transform 1s;
-  box-sizing: border-box;
   transition: background-image .5s, background size .5s
 }
 
