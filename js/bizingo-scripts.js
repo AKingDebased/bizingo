@@ -17,7 +17,7 @@ $(function () {
   var winners = [{name: "restaurant and cafe server", winner: ['c1','c2','c3','c4','c5']}];
   var clicked = [];
   var possibleWins = winners[0].winner.length;
-  var totalCards = 3;
+  var totalCards = 4;
   var currentCard = 1;
 
   function slideLeft(){
