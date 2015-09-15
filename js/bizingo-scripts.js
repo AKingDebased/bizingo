@@ -17,9 +17,16 @@ $(function () {
   var winners = [{name: "restaurant and cafe server", winner: ['c1','c2','c3','c4','c5']}];
   var clicked = [];
   var possibleWins = winners[0].winner.length;
+  var totalCards = 2;
   var currentCard = 1;
 
-  $("#card" + currentCard).css("visibility","visible");
+  function slideIn(){
+    currentCard++;
+    currentCard = currentCard > 2 ? 1 : currentCard;
+    $("#card" + currentCard).show("slide",{direction:"right"});
+  }
+
+  $("#card" + currentCard).show();
 
   $('.bizingo-cell').click(function(){
     $(this).css("background-size","45px");
@@ -31,7 +38,7 @@ $(function () {
     if($.inArray($(this).attr("id"),winners[0].winner) > -1){
       $(this).css("background-image","url('http://www.wpclipart.com/education/gold_stars/circle_star_gold_T.png')");
     } else {
-        $(this).css("background-image","url('http://www.iconsdb.com/icons/preview/gray/circle-xxl.png')");
+      $(this).css("background-image","url('http://www.iconsdb.com/icons/preview/gray/circle-xxl.png')");
     }
 
     for(var i = 0; i < possibleWins;
@@ -60,8 +67,6 @@ $(function () {
     })
 
     $("#right").click(function(){
-      $("#card" + currentCard).hide("slide");
-      currentCard++;
-      $("#card" + currentCard).css("visibility","visible").show("slide",{direction:"right"});
+      $("#card" + currentCard).hide("slide",{},400,slideIn);
     })
   });
