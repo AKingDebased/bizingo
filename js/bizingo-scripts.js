@@ -20,10 +20,16 @@ $(function () {
   var totalCards = 2;
   var currentCard = 1;
 
-  function slideIn(){
+  function slideLeft(){
     currentCard++;
     currentCard = currentCard > 2 ? 1 : currentCard;
     $("#card" + currentCard).show("slide",{direction:"right"});
+  }
+
+  function slideRight(){
+    currentCard--;
+    currentCard = currentCard < 1 ? totalCards : currentCard;
+    $("#card" + currentCard).show("slide",{direction:"left"});
   }
 
   $("#card" + currentCard).show();
@@ -67,6 +73,10 @@ $(function () {
     })
 
     $("#right").click(function(){
-      $("#card" + currentCard).hide("slide",{},400,slideIn);
+      $("#card" + currentCard).hide("slide",{},400,slideLeft);
+    })
+
+    $("#left").click(function(){
+      $("#card" + currentCard).hide("slide",{direction:"right"},400,slideRight);
     })
   });
