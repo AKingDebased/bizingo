@@ -17,12 +17,12 @@ $(function () {
   var winners = [{name: "restaurant and cafe server", winner: ['c1','c2','c3','c4','c5']}];
   var clicked = [];
   var possibleWins = winners[0].winner.length;
-  var totalCards = 2;
+  var totalCards = 3;
   var currentCard = 1;
 
   function slideLeft(){
     currentCard++;
-    currentCard = currentCard > 2 ? 1 : currentCard;
+    currentCard = currentCard > totalCards ? 1 : currentCard;
     $("#card" + currentCard).show("slide",{direction:"right"});
   }
 

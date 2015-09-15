@@ -31,7 +31,6 @@ body{
   width:960px;
   margin:0 auto;
   overflow: auto;
-  box-shadow: 10px 10px 5px #888888;
   display:none;
 }
 
