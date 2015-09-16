@@ -56,19 +56,20 @@ $(function () {
     }).fadeTo('slow',15);
     winCell = 0;
     clicked = [];
+    isDisplaying = true;
   }
 
   function closeOverlay(){
-    $(".close-window").click(function(){
-      $(".overlay").fadeTo("slow", 0.3,function(){
-        $(".overlay").css("visibility","hidden");
-      }).fadeTo('slow',15);
-      $(".bizingo-cell").toggleClass("flip").css("background-image","none");
-    })
+    $(".overlay").fadeTo("slow", 0.3,function(){
+      $(".overlay").css("visibility","hidden");
+    }).fadeTo('slow',15);
+    $(".bizingo-cell").toggleClass("flip").css("background-image","none");
+    isDisplaying = false;
+
   }
 
   $("#card" + currentCard).show();
-  closeOverlay();
+  $(".close-window").click(closeOverlay);
 
 
   $('.bizingo-cell').click(function(){
@@ -78,10 +79,16 @@ $(function () {
   $("#right").click(function(){
     $("#card" + currentCard).hide("slide",{},400,slideLeft);
     emptyCells();
+    if(isDisplaying){
+      closeOverlay();
+    }
   })
 
   $("#left").click(function(){
     $("#card" + currentCard).hide("slide",{direction:"right"},400,slideRight);
     emptyCells();
+    if(isDisplaying){
+      closeOverlay();
+    }
   })
 });
