@@ -1,11 +1,14 @@
 $(function () {
   var winners = [
     ['c1','c2','c3','c4','c5'], //server
+    ['a1','b2','c3','d4','e5'], //web dev
     ['e1','e2','e3','e4','e5'], //loan coord
     ['b1','b2','b3','b4','b5'], //scribe
-    ['a1','b2','c3','d4','e5'] //web dev
+    ['a3','b3','c3','d3','e3'], //digital designer
+    ['a1','b2','c3','d4','e5'], //game designer
+    ['a1','b1','c1','d1','e1'] //web producer
   ];
-  var totalCards = 4;
+  var totalCards = 7;
   var currentCard = 1;
   var clicked = [];
   var possibleWins = winners[currentCard - 1].length;
