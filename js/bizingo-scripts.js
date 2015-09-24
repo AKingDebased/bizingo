@@ -14,6 +14,17 @@ $(function () {
   var possibleWins = winners[currentCard - 1].length;
   var isDisplaying = false;
 
+  $("<div></div>").css({
+    height:"100px",
+    width:"350px",
+    backgroundColor:"white",
+    border:"3px solid black",
+    position:"absolute",
+    left:"100px",
+    top:"100px",
+    borderRadius:"10px"
+  }).appendTo("body");
+
   function emptyCells(){
     $(".bizingo-cell").css("background-image","none");
     clicked = [];
@@ -94,4 +105,9 @@ $(function () {
       closeOverlay();
     }
   })
+
+  function dislayDefinition(){
+
+  }
+
 });
