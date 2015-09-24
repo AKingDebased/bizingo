@@ -14,16 +14,24 @@ $(function () {
   var possibleWins = winners[currentCard - 1].length;
   var isDisplaying = false;
 
-  $("<div></div>").css({
+  var $tooltip = $("<div></div>").css({
     height:"100px",
     width:"350px",
     backgroundColor:"white",
     border:"3px solid black",
     position:"absolute",
-    left:"100px",
-    top:"100px",
+    display:"none",
     borderRadius:"10px"
-  }).appendTo("body");
+  }).appendTo("body")
+
+  $(document).on('mousemove',function(e){
+    $tooltip.css({
+      left: e.pageX,
+      top: e.pageY,
+      display:"block"
+    });
+  });
+
 
   function emptyCells(){
     $(".bizingo-cell").css("background-image","none");
