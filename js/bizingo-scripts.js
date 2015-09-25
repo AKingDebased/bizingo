@@ -24,12 +24,8 @@ $(function () {
     borderRadius:"10px"
   }).appendTo("body")
 
-  $(document).on('mousemove',function(e){
-    $tooltip.css({
-      left: e.pageX,
-      top: e.pageY,
-      display:"block"
-    });
+  $("#a1").on('mouseover',function(e){
+    displayDefinition("of course",e);
   });
 
 
@@ -114,8 +110,11 @@ $(function () {
     }
   })
 
-  function dislayDefinition(){
-
-  }
-
+  function displayDefinition(definition,e){
+    $tooltip.css({
+      left: e.pageX,
+      top: e.pageY,
+      display:"block"
+    }).text(definition);
+  };
 });
