@@ -82,7 +82,7 @@ $(function () {
       }
 
       if($(this).attr("id") === "d1"){
-        $(this).wrap("<a title='MedNet & EPIC/CareConnect are all electronic health record programs that allow users to access, manipulate, and store inpatient and outpatient clinical records.'></a>");
+        $(this).wrap("<a title='MedNet & Epic/CareConnect are all electronic health record programs that allow users to access, manipulate, and store inpatient and outpatient clinical records.'></a>");
       }
 
       if($(this).attr("id") === "d2"){
@@ -127,6 +127,144 @@ $(function () {
         $(this).wrap("<a title='An Application Programming Interface is a set of routines and protocols used for building software applications, almost like an instruction manual.  An API based web app executes most of its functionality through the use of an API. This allows for functionality to be cross-compatible across phones, tablets, desktops, and otherwise.'></a>");
       }
     }
+
+    if(currentCard === 5){
+      if($(this).attr("id") === "a3"){
+        $(this).wrap("<a title='HyperText Markup Language allows web browsers to read HTML files and display content.  HTML is one of the languages used in web design, as it allows the developer to render content in a browser.'></a>");
+      }
+
+      if($(this).attr("id") === "a4"){
+        $(this).wrap("<a title='Structured Query Language, i.e. SQL, is a programming language used for writing data to and accessing from databases.'></a>");
+      }
+
+      if($(this).attr("id") === "a5"){
+        $(this).wrap("<a title='Linux is an entirely open source computer operating system developed by Linus Torvalds in 1991.  It is one of the most popularly used operating systems, along with Mac OS and Windows, and it features prominently in the LAMP development stack.'></a>");
+      }
+
+      if($(this).attr("id") === "c3"){
+        $(this).wrap("<a title='Illustrator and InDesign are part of the Adobe software suite.  Each program contributes something to the design workflow, be it digital painting or digital design layouts.'></a>");
+      }
+
+      if($(this).attr("id") === "c5"){
+        $(this).wrap("<a title='Obstetrics and gynecology is the medical speciality that deals with pregnancy, childbirth, and care of the female reproductive systems.'></a>");
+      }
+
+      if($(this).attr("id") === "d1"){
+        $(this).wrap("<a title='The List Processor langauge (LISP) is one of the oldest programming languages in the industry.  Originally conceived as a practical mathematical notation for computer programs, it has helped pioneered many pillars of computer science, such as tree data structures, conditionals, and higher order functions.'></a>");
+      }
+
+      if($(this).attr("id") === "d5"){
+        $(this).wrap("<a title='Epic Systems is a healthcare software designed to hold hospital medical records. As of 2015, Epic Systems records over 54% of patient data in the US.'></a>");
+      }
+
+      if($(this).attr("id") === "d5"){
+        $(this).wrap("<a title='Epic Systems is a healthcare software designed to hold hospital medical records. As of 2015, Epic Systems records over 54% of patient data in the US.'></a>");
+      }
+
+      if($(this).attr("id") === "e1"){
+        $(this).wrap("<a title='Representational State Transfer is the underlying architectural principle of the web.  Simply put, it dictates that clients (i.e. browers) can interact with servers without needing to know anything beforehand about the server and the resources it contains.'></a>");
+      }
+
+      if($(this).attr("id") === "e4"){
+        $(this).wrap("<a title='MedNet & EPIC/CareConnect are all electronic health record programs that allow users to access, manipulate, and store inpatient and outpatient clinical records.'></a>");
+      }
+    }
+
+    if(currentCard === 6){
+      if($(this).attr("id") === "a1"){
+        $(this).wrap("<a title='3D level editors are applications which can be used to develop 3D environments, be it for films, video games, or otherwise.  Some examples include Maya, Unity3D, and Unreal Engine 4.'></a>");
+      }
+
+      if($(this).attr("id") === "b1"){
+        $(this).wrap("<a title='C# (pronounced &#39;see&#39;-&#39;sharp&#39;) is a multi-paradigm programming language developed by Microsoft for use within their .NET framework.  It is commonly used in Windows applications, as well as a scripting language in video game engines.'></a>");
+      }
+
+      if($(this).attr("id") === "b2"){
+        $(this).wrap("<a title='Maya is a 3D animation and modeling program used to create full-motion effects, be it for film, video games, or otherwise.'></a>");
+      }
+
+      if($(this).attr("id") === "b5"){
+        $(this).wrap("<a title='PHP, which (weirdly) stands for Hypertext Preprocessor, is a programming language that is primarily used for server side scripting (as opposed to front end web design).'></a>");
+      }
+
+      if($(this).attr("id") === "c4"){
+        $(this).wrap("<a title='AutoCAD is a commercial software application for 2D and 3D computer-aided design (CAD).  It is primarily used by architects, project managers, graphic designers, and other professionals interested in drafting up plans, blueprints, and other such designs.'></a>");
+      }
+
+      if($(this).attr("id") === "d4"){
+        $(this).wrap("<a title='Game scripting is programming specifically in the context of video game behavior and functionality.  Many languages can be used for this purpose, including but not limited to Python, C#, Javascript, and C++.'></a>");
+      }
+
+      if($(this).attr("id") === "e4"){
+        $(this).wrap("<a title='Autodesk is the software company behind such 3D design programs as Maya and 3ds Max.'></a>");
+      }
+    }
+
+    if(currentCard === 7){
+      if($(this).attr("id") === "a1"){
+        $(this).wrap("<a title='MailChimp and Sailthru are web based email marketing services that allow users to send email newsletters, invitations, reminders, and more to a list of subscribers.'></a>");
+      }
+
+      if($(this).attr("id") === "a3"){
+        $(this).wrap("<a title='Google Partners are online marketing companies who have been entrusted by Google with the use of their products.  They are stamped with Google's approval for adhering to Google's system of best practices. '></a>");
+      }
+
+      if($(this).attr("id") === "b1"){
+        $(this).wrap("<a title='The Wordpress content management system allows for websites to be created, updated, and maintained through an intuitive, database system.'></a>");
+      }
+
+      if($(this).attr("id") === "b5"){
+        $(this).wrap("<a title='Business to Consumer eCommerce refers to online transactions between businesses and consumers, as opposed to transactions between businesses (B2B). It is essentially the online equivalent of a retail store; consider the example of Amazon, a prominent B2C eCommerce website.'></a>");
+      }
+
+      if($(this).attr("id") === "c1"){
+        $(this).wrap("<a title='Simply put, Javascript is the programming language of the internet.  Primarily used in web development, it powers almost all interactive functionality on all web sites, big or small.'></a>");
+      }
+
+      if($(this).attr("id") === "c2"){
+        $(this).wrap("<a title='Search engine optimization focuses on optimizing website or page visiblity through unpaid results - that is, the results that show up in a typical, organic search.'></a>");
+      }
+
+      if($(this).attr("id") === "c5"){
+        $(this).wrap("<a title='The ASP.NET markup language is designed for the creation of web applications.  It allows for server based code to be generated into dynamic web content on the fly.'></a>");
+      }
+
+      if($(this).attr("id") === "d3"){
+        $(this).wrap("<a title='Java (not to be confused with Javascript) is one of the most popular programming languages in the world.  It has seen use in games, web applications, and enterprise programming.'></a>");
+      }
+
+      if($(this).attr("id") === "d4"){
+        $(this).wrap("<a title='The Adobe Creative Suite is a collection of Adobe applications that contains, but is not limited to, Photoshop, Acrobat, InDesign, and After Effects.'></a>");
+      }
+
+      if($(this).attr("id") === "e1"){
+        $(this).wrap("<a title='HyperText Markup Language is the de facto markup language of the internet.  Web browsers are able to read HTML files and render them into visible or audible web pages.'></a>");
+      }
+
+      if($(this).attr("id") === "e2"){
+        $(this).wrap("<a title='Google Webmaster Tools allow webmasters (individuals who run and maintain web servers) to check the indexing status and visibility of their websites in Google search results.'></a>");
+      }
+
+      if($(this).attr("id") === "e3"){
+        $(this).wrap("<a title='The model-view-controller software design pattern allows the developer to compartmentalize a software application into three distinct parts, being the model (stores data that can be retrieved from the controller), the view (generates the output to the user), and the controller (sends commands to the model to update the model&#39;s state).'></a>");
+      }
+
+      if($(this).attr("id") === "e4"){
+        $(this).wrap("<a title='iOS (the iPhone&#39;s operating system) and Android come with their own APIs for developing apps on either device.'></a>");
+      }
+
+      if($(this).attr("id") === "a4"){
+        $(this).wrap("<a title='QuickBooks is an accounting software package geared towards small and medium-sized businesses.'></a>");
+      }
+
+      if($(this).attr("id") === "a5"){
+        $(this).wrap("<a title='C++ is a general-purpose programming language developed by Bjarne Stroustrup in 1983.  It is primarily used in high-speed, performance-critical environments, such as desktop applications, NASA space probes, and stock market transaction systems.'></a>");
+      }
+
+      if($(this).attr("id") === "c4"){
+        $(this).wrap("<a title='Conversion optimization is a system for increasing the percentage of visitors to a website that convert into customers or, more generally, users that take any desired action on a given webpage.'></a>");
+      }
+    }
   });
 
 
@@ -152,9 +290,9 @@ $(function () {
 
     var winCell = 0;
     if($.inArray($(thisVal).attr("id"),winners[currentCard - 1]) > -1){
-      $(thisVal).css("background-image","url('http://www.wpclipart.com/education/gold_stars/circle_star_gold_T.png')");
+      $(thisVal).css("background-image","url('http://i.imgur.com/HxoNp1D.png')");
     } else {
-      $(thisVal).css("background-image","url('http://www.iconsdb.com/icons/preview/gray/circle-xxl.png')");
+      $(thisVal).css("background-image","url('http://i.imgur.com/azJEyr9.png')");
     }
 
     for(var i = 0; i < possibleWins; i++){
