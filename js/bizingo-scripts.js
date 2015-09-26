@@ -49,6 +49,53 @@ $(function () {
       if($(this).attr("id") === "c4"){
         $(this).wrap("<a title='jQuery is a cross-platform Javascript library designed with client-side HTML scripting in mind. It is primarily used in front-end web development, and it is the single most popular Javascript library in use today, with installation on over 65% of the 10 million highest-trafficked sites on the web.'></a>");
       }
+
+
+      if($(this).attr("id") === "e4"){
+        $(this).wrap("<a title='Heating, Ventilation, & Air Conditioning licensed contractors are certified to install, repair, and maintain any and all varieties of heaters, ventilators, air conditioning units, and all other associated properties.'></a>");
+      }
+
+      if($(this).attr("id") === "e5"){
+        $(this).wrap("<a title='Simply put, Javascript is the programming language of the internet.  Primarily used in web development, it powers almost all interactive functionality on all web sites, big or small.'></a>");
+      }
+    }
+
+    if(currentCard === 3){
+      if($(this).attr("id") === "a1"){
+        $(this).wrap("<a title='Asynchronous Javascript and XML is a group of interconnected web development techniques that allow web clients to exchange data with a server and update parges of a web page without reloading the entire page.  Consider GMail, which allows you to browse your inbox while composing an email in a pop up window.'></a>");
+      }
+
+      if($(this).attr("id") === "c1"){
+        $(this).wrap("<a title='Obstetrics and gynecology is the medical speciality that deals with pregnancy, childbirth, and care of the female reproductive systems.'></a>");
+      }
+
+      if($(this).attr("id") === "c3"){
+        $(this).wrap("<a title='Photoshop, Illustrator, and InDesign are all part of the Adobe software suite.  Each program contributes something to the design workflow, be it image editing, digital painting, or digital design layouts.'></a>");
+      }
+
+      if($(this).attr("id") === "c4"){
+        $(this).wrap("<a title='HyperText Markup Language is the de facto markup language of the internet.  Web browsers are able to read HTML files and render them into visible or audible web pages.  Cascading Style Sheets is a style sheet language used for the presentation of a document, including color, size, and positioning.'></a>");
+      }
+
+      if($(this).attr("id") === "c5"){
+        $(this).wrap("<a title='A valid Environmental Protection Agency refrigerant recycling certification qualifies a contractor to work with refrigerant chemicals, such as those found in air conditioners and kitchen fridges.'></a>");
+      }
+
+      if($(this).attr("id") === "d1"){
+        $(this).wrap("<a title='MedNet & EPIC/CareConnect are all electronic health record programs that allow users to access, manipulate, and store inpatient and outpatient clinical records.'></a>");
+      }
+
+      if($(this).attr("id") === "d2"){
+        $(this).wrap("<a title='Structured Query Language, i.e. SQL, is a programming language used for writing data to and accessing from databases.'></a>");
+      }
+
+      if($(this).attr("id") === "d5"){
+        $(this).wrap("<a title='Maya is a 3D animation and modeling program used to create full-motion effects, be it for film, video games, or otherwise.'></a>");
+      }
+
+      if($(this).attr("id") === "e2"){
+        $(this).wrap("<a title='Federal Housing Accessibility and Housing Accesibility Guidelines are federal statutes that dictate the protocols to be followed for handicap accesibility in any given establishment or building.'></a>");
+      }
     }
   });
 
