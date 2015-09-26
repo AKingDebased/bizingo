@@ -1,5 +1,5 @@
 {
-  "name": "bizingo-sample",
+  "name": "bizingo",
   "root": "./",
   "clean_urls": true,
   "error_page": "error.html"

@@ -14,19 +14,45 @@ $(function () {
   var possibleWins = winners[currentCard - 1].length;
   var isDisplaying = false;
 
-  var $tooltip = $("<div></div>").css({
-    height:"100px",
-    width:"350px",
-    backgroundColor:"white",
-    border:"3px solid black",
-    position:"absolute",
-    display:"none",
-    borderRadius:"10px"
-  }).appendTo("body")
-
-  $("#a1").on('mouseover',function(e){
-    displayDefinition("of course",e);
+  $(document).tooltip({
+    track: true
   });
+
+  $(".bizingo-cell").hover(function(){
+    if(currentCard === 1){
+      if($(this).attr("id") === "b1"){
+        $(this).wrap("<a title='Adobe Dreamweaver is a web development tool that combines a visual interface with standard code editor features.'></a>");
+      }
+
+      if($(this).attr("id") === "b5"){
+        $(this).wrap("<a title='Scrum is a software development model based around multiple small teams working in an interdependent manner.  Its strength lies in cross functional teams that collaborate together for maximum effectiveness and flexibility.'></a>");
+      }
+
+      if($(this).attr("id") === "d3"){
+        $(this).wrap("<a title='Search engine optimization focuses on optimizing website or page visiblity through unpaid results - that is, the results that show up in a typical, organic search.  Search engine marketing, on the other hand, looks to increase site or page visibility through paid advertising.'></a>");
+      }
+
+      if($(this).attr("id") === "d4"){
+        $(this).wrap("<a title='Representational State Transfer is the underlying architectural principle of the web.  Simply put, it dictates that clients (i.e. browers) can interact with servers without needing to know anything beforehand about the server and the resources it contains.'></a>");
+      }
+    }
+
+    if(currentCard === 2){
+      if($(this).attr("id") === "a1"){
+        $(this).wrap("<a title='HyperText Markup Language is the de facto markup language of the internet.  Web browsers are able to read HTML files and render them into visible or audible web pages.  Cascading Style Sheets is a style sheet language used for the presentation of a document, including color, size, and positioning.'></a>");
+      }
+
+      if($(this).attr("id") === "b5"){
+        $(this).wrap("<a title='Asynchronous Javascript and XML is a group of interconnected web development techniques that allow web clients to exchange data with a server and update parges of a web page without reloading the entire page.  Consider GMail, which allows you to browse your inbox while composing an email in a pop up window.'></a>");
+      }
+
+      if($(this).attr("id") === "c4"){
+        $(this).wrap("<a title='jQuery is a cross-platform Javascript library designed with client-side HTML scripting in mind. It is primarily used in front-end web development, and it is the single most popular Javascript library in use today, with installation on over 65% of the 10 million highest-trafficked sites on the web.'></a>");
+      }
+    }
+  });
+
+
 
 
   function emptyCells(){
@@ -109,12 +135,4 @@ $(function () {
       closeOverlay();
     }
   })
-
-  function displayDefinition(definition,e){
-    $tooltip.css({
-      left: e.pageX,
-      top: e.pageY,
-      display:"block"
-    }).text(definition);
-  };
 });

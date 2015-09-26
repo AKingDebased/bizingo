@@ -3,6 +3,11 @@ body{
   background-color: lightskyblue;
 }
 
+a {
+  color:#000000;
+  text-decoration:none;
+}
+
 .form{
   height:700px;
   width:550px;
